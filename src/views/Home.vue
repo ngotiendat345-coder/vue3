@@ -22,29 +22,7 @@ export default {
     const { load, posts, error } = getPosts();
     load();
     return { posts, error };
-    // const search = ref("");
-    // const names = ref([
-    //   "mario",
-    //   "yoshi",
-    //   "luigi",
-    //   "toad",
-    //   "bowser",
-    //   "koopa",
-    //   "peach",
-    // ]);
-    // const stopWatch = watch(search, () => {
-    //   console.log("watch function ran");
-    // });
-
-    // const matchNames = computed(() => {
-    //   return names.value.filter((name) => name.includes(search.value));
-    // });
-    // const stopEffect = watchEffect(() => {
-    //   console.log("watchEffect ran");
-    //   console.log(matchNames.value);
-    // });
-    // console.log(matchNames);
-    // return { search, names, matchNames };
+    // const search = ref("")
   },
   updated() {
     console.log("updated");
