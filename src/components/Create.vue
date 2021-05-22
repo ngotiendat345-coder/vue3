@@ -21,7 +21,7 @@ export default {
     const body = ref("");
     const tags = ref([]);
     const tag = ref("");
-
+    this.$router.push;
     const handleKeydown = () => {
       if (!tags.value.includes(tag.value)) {
         tag.value = tag.value.replace(/\s/g, "");
